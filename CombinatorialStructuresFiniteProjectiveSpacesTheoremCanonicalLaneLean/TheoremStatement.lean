@@ -1,0 +1,12 @@
+import HautevilleHouse.CombinatorialStructuresFiniteProjectiveSpacesTheoremCanonicalLaneLean.BridgeLemmas
+import HautevilleHouse.CombinatorialStructuresFiniteProjectiveSpacesTheoremCanonicalLaneLean.GateLemmas
+
+namespace HautevilleHouse
+namespace CombinatorialStructuresFiniteProjectiveSpacesTheoremCanonicalLaneLean
+
+theorem finite_projective_space_theorem_statement (A : AdmissibleClass) :
+    bridgeClosed A ∧ gateClosed A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end CombinatorialStructuresFiniteProjectiveSpacesTheoremCanonicalLaneLean
+end HautevilleHouse
